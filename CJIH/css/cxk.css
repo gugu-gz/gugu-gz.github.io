@@ -1,0 +1,27 @@
+#h{
+    color:blue;
+    transition:color 2s;
+    user-select:none
+}
+#cxk{
+    width:100px;
+    height:100px;
+    position:absolute;
+    border:8px blue double;
+    transition: border 2s;
+    border-radius: 360px;
+    background:url("../img/cxk.jpg")
+}
+#lq{
+    position:absolute;
+    pointer-events:none;
+    width:100px;
+    height:100px;
+    top:10000px;
+}
+#out{
+    width:1000px;
+    height:1000px;
+    background:rgba(0, 0, 0, 0.7);
+    border:8px red double;
+}
