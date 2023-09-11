@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+        <link rel="stylesheet" type="text/css" href="../CJIH/css/jsq.css" />
+		<script type="text/javascript" src="../CJIH/js/jsq.js"></script>
+	</head>
+	<body>
+		<div class="banner">
+			<h2>
+				计 算 器
+			</h2>
+		</div>
+			<br />
+		<div class="content">
+			<input type="button" value="清 除" class="clear" onclick="clearValue()"/>
+			<input type="text" id="result" readonly="readonly" placeholder="运算结果显示"/>
+				<br />
+			<input type="button" value="1" class="number" onclick="get(this.value)"/>
+			<input type="button" value="2" class="number" onclick="get(this.value)"/>
+			<input type="button" value="3" class="number" onclick="get(this.value)"/>
+			<input type="button" value="+" class="symbol" onclick="get(this.value)"/>
+				<br />
+			<input type="button" value="4" class="number" onclick="get(this.value)"/>
+			<input type="button" value="5" class="number" onclick="get(this.value)"/>
+			<input type="button" value="6" class="number" onclick="get(this.value)"/>
+			<input type="button" value="-" class="symbol" onclick="get(this.value)"/>
+				<br />
+			<input type="button" value="7" class="number" onclick="get(this.value)"/>
+			<input type="button" value="8" class="number" onclick="get(this.value)"/>
+			<input type="button" value="9" class="number" onclick="get(this.value)"/>
+			<input type="button" value="*" class="symbol" onclick="get(this.value)"/>
+				<br />
+			<input type="button" value="0" class="number" onclick="get(this.value)"/>
+			<input type="button" value="." class="symbol" onclick="get(this.value)"/>
+			<input type="button" value="/" class="symbol" onclick="get(this.value)"/>
+			<input type="button" value="=" class="calculate" onclick="calculate()"/>
+		</div>
+			<br />
+		</div>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    /* Custom styles */
+    body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+    /* Top navigation bar */
+    nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    }
+
+    nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Banner section */
+    .banner {
+    height: 300px;
+    background-image: url('https://picsum.photos/1200/300');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .banner h1 {
+    font-size: 60px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    }
+
+    /* Blog post section */
+    .post {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .post img {
+    max-width: 100%;
+    }
+
+    .post h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#">首页</a>
+            <a href="#">归档</a>
+            <a href="#">关于我</a>
+            <a href="#">联系我</a>
+        </div>
+        <div class="hero-section">
+            <h1>欢迎来到我的博客</h1>
+            <p>我是一个热爱编程的人，这里是我记录思考的地方。</p>
+            <a href="#" class="btn">了解更多</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-post">
+            <div class="post-img">
+                <img src="https://picsum.photos/800/500?random=1" alt="Featured Post Image">
+            </div>
+            <div class="post-content">
+                <h2>如何提高编程能力</h2>
+                <p>编程能力的提高需要不断的实践和学习，但也有一些技巧可以帮助我们更快地提高自己的水平，比如切换不同的学习方式，参加社区活动等。在这篇文章中，我将分享一些提高编程能力的方法和技巧。</p>
+                <a href="#" class="btn">阅读更多</a>
+            </div>
+        </section>
+
+        <section class="latest-posts">
+            <h2>最新文章</h2>
+            <div class="posts-container">
+                <div class="post">
+                    <div class="post-img">
+                        <img src="https://picsum.photos/200/200?random=2" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>如何优化代码</h3>
+                        <p>编写高效的代码是每个程序员的目标，但是在实际编码过程中，我们常常忽略或者不知道一些能够提高代码质量并优化代码的方法和技巧。在这篇文章中，我将带你一起来学习这些方法和技巧。</p>
+                        <a href="#" class="btn">阅读更多</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-img">
+                        <img src="https://picsum.photos/200/200?random=3" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>如何提高编程思维</h3>
+                        <p>编程思维是每个程序员都需要具备的重要素质，但是如何有效提高编程思维呢？在这篇文章中，我将和大家分享一些我自己的心得和经验。</p>
+                        <a href="#" class="btn">阅读更多</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-img">
+                        <img src="https://picsum.photos/200/200?random=4" alt="Post Image">
+                    </div>
+                    <div class="post-content">
+                        <h3>如何解决常见的编程问题</h3>
+                        <p>在编程过程中，我们经常会遇到各种各样的问题，这些问题的解决对于提高编程能力来说也是非常重要的。在这篇文章中，我将和大家分享一些我自己的解决问题的经验和方法。</p>
+                        <a href="#" class="btn">阅读更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>订阅我的博客</h2>
+            <form>
+                <label for="email">输入你的邮箱地址:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com">
+                <button type="submit">订阅</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 我的博客 - 所有权利保留</p>
+    </footer>
+</body>
+</html>
